@@ -20,70 +20,104 @@
 <!-- Layout of time picker -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_gravity="center_horizontal"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal" >
 
-    <LinearLayout android:orientation="horizontal"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <!--android:layoutDirection="ltr"-->
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- android:layoutDirection="ltr" -->
+
 
         <!-- hour -->
+
         <net.simonvt.numberpicker.NumberPicker
             android:id="@+id/hour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dip"
             android:layout_marginBottom="16dip"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="6dp"
+            android:layout_marginTop="16dip"
             android:focusable="true"
-            android:focusableInTouchMode="true"
-            />
-        <!--android:layout_marginStart="16dip"
-        android:layout_marginEnd="6dip"-->
+            android:focusableInTouchMode="true" />
+        <!--
+        android:layout_marginStart="16dip"
+        android:layout_marginEnd="6dip"
+        -->
+
 
         <!-- divider -->
+
         <TextView
-            android:id="@+id/divider"
+            android:id="@+id/divider1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:importantForAccessibility="no"
-            />
+            android:textIsSelectable="false" />
 
         <!-- minute -->
+
         <net.simonvt.numberpicker.NumberPicker
             android:id="@+id/minute"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dip"
             android:layout_marginBottom="16dip"
             android:layout_marginLeft="6dp"
             android:layout_marginRight="8dp"
+            android:layout_marginTop="16dip"
             android:focusable="true"
-            android:focusableInTouchMode="true"
-            />
-        <!--android:layout_marginStart="6dip"
-        android:layout_marginEnd="8dip"-->
+            android:focusableInTouchMode="true" />
+
+        <!-- divider -->
+
+        <TextView
+            android:id="@+id/divider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:importantForAccessibility="no"
+            android:textIsSelectable="false" />
+
+        <!-- second -->
+
+        <net.simonvt.numberpicker.NumberPicker
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dip"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+        <!--
+        android:layout_marginStart="6dip"
+        android:layout_marginEnd="8dip"
+        -->
 
     </LinearLayout>
 
     <!-- AM / PM -->
+
     <net.simonvt.numberpicker.NumberPicker
         android:id="@+id/amPm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dip"
         android:layout_marginBottom="16dip"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="16dp"
+        android:layout_marginTop="16dip"
         android:focusable="true"
-        android:focusableInTouchMode="true"
-        />
-    <!--android:layout_marginStart="8dip"
-    android:layout_marginEnd="16dip"-->
+        android:focusableInTouchMode="true" />
+    <!--
+    android:layout_marginStart="8dip"
+    android:layout_marginEnd="16dip"
+    -->
 
 </LinearLayout>
